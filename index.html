@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DropActu - Accueil</title>
+  <link rel="stylesheet" href="article.css" />
+</head>
+
+<script>
+  function filtrer(categorie) {
+    const cartes = document.querySelectorAll('.card');
+    cartes.forEach((carte) => {
+      if (categorie === 'all') {
+        carte.style.display = 'block';
+      } else {
+        carte.style.display = carte.classList.contains(`categorie-${categorie}`) ? 'block' : 'none';
+      }
+    });
+  }
+  document.addEventListener("DOMContentLoaded", () => filtrer('all'));
+</script>
+
+<body>
+  <header class="card2">
+    <h1><img src="/images/file_00000000164461f7b7161d5ed38e100e.png" alt="Logo DropActu" class="logo-img"/></h1>
+    <nav>
+     <a href="index.html" class="btn2" onclick="filtrer('all')">Accueil</a>
+     <a href="#" class="btn2" onclick="filtrer('evenement')">Événements</a>
+     <a href="#" class="btn2" onclick="filtrer('cadeaux')">Cadeaux</a>
+     <a href="#" class="btn2" onclick="filtrer('news')">News</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="articles">
+      <div class="card categorie-cadeaux">
+        <img src="/images/fortnite-elite-zadie-outfit-1920x1080-4dd9b7b052f0.jpg" alt="Zadie de l'Élite Fortnite" alt="Le Skin Zadiede l'Élite" class="article-img"/>
+        <div class="card-content">
+          <h2>🔥 Récupère le skin Zadie de l’Élite GRATUITEMENT sur Fortnite 🔥 !</h2>
+          <p><strong>Le skin Zadie de l’Élite</strong> est dispo dès maintenant, et il est 100% GRATUIT ✨</p>
+          <a href="article1.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+      <div class="card categorie-news">
+        <img src="/images/general-grievous-fortnite-star-wars.jpg" alt="Nouvelles armes Star Wars dans Fortnite" class="article-img"/>
+        <div class="card-content">
+          <h2>🚨 Adieu SCAR et pompe : place aux armes Star Wars dans Fortnite !</h2>
+          <p>changement radical : <strong>toutes les armes classiques ont été remplacées par des armes issues de l'univers Star Wars</strong> ! 🔫✨</p>
+          <a href="article12.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+      
+      <div class="card categorie-news">
+        <img src="/images/fortnite-star-wars-watch-party-1920x1080-26638e5f4fde.jpg" alt="Episodes Star Wars" />
+         <div class="card-content">
+         <h2>Regarde Star Wars: Tales of the Underworld dans Fortnite !</h2>
+          <p>Dès le 2 mai à 16h (CEST), viens mater les deux premiers épisodes de Star Wars: Tales of the Underworld sur l'île Star Wars Watch Party !</p>
+         <a href="article11.html" class="btn">Lire l'article</a>
+         </div>
+       </div>
+      
+      <!-- Article 10 -->
+      <div class="card categorie-news">
+        <img src="/images/fortnite-console-victory-cash-cups-1920x1080-c2acfadcee05.jpg" alt="Victory Cash Cups Console" />
+        <div class="card-content">
+          <h2>Victory Cash Cups : Exclusif Console en Mai</h2>
+          <p>Participe aux tournois Duos sur console et gagne de l'argent chaque semaine !</p>
+          <a href="article10.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+
+      <!-- Article 9 -->
+      <div class="card categorie-evenement">
+        <img src="/images/lego-fortnite-brick-life-star-wars-festival-1920x1080-ca34aa77c21c.jpg" alt="LEGO Star Wars" />
+        <div class="card-content">
+          <h2>Star Wars débarque dans LEGO Fortnite !</h2>
+          <p>Explore Briquopolis, participe à la convention et débloque du contenu Star Wars exclusif.</p>
+          <a href="article9.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+
+      <!-- Article 8 -->
+      <div class="card categorie-cadeaux">
+        <img src="/images/Gp3Ex_XWgAANNeF.jpg" alt="Passe Rebellion LEGO" />
+        <div class="card-content">
+          <h2>Obtiens le Skin Lanchlan Champion(exclusif FNCS)</h2>
+          <p>Le créateur australien Lachlan revient dans une version FNCS « Champion » que tu peux débloquer gratuitement grâce à la FNCS Lachlan Icon Cup!</p>
+          <a href="article8.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+
+      <!-- Article 7 -->
+      <div class=" card categorie-cadeaux">
+        <img src="/images/Gp3yMQsWwAA0z7f.jpg" alt="Cadeaux Star Wars" class="article-img" />
+        <div class="card-content">
+          <h2>Un nouveau skin FNCS GRATUIT : Loserfruit la Championne !</h2>
+          <p>Fortnite lance un nouveau tournoi FNCS Icon Cup avec à la clé un skin exclusif à récupérer gratuitement ! Cette fois, c’est la créatrice australienne Loserfruit qui est mise à l’honneur…</p>
+          <a href="article7.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+
+      <!-- Article 6 -->
+      <div class="card categorie-cadeaux">
+        <img src="/images/fr-fortnite-rankers-death-star-1920x1080-78f75b704366.jpg" alt="Parapluie Étoile de la Mort classé" />
+        <div class="card-content">
+          <h2>Un parapluie Star Wars GRATUIT en jouant classé sur Fortnite !</h2>
+          <p>Une nouvelle récompense galactique débarque dans Fortnite pour les joueurs de matchs classés !</p>
+          <a href="article6.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+
+      <!-- Article 5 -->
+      <div class="card categorie-cadeaux">
+        <img src="images/cartes-clones.jpg" alt="Clones Star Wars" />
+        <div class="card-content">
+          <h2>2 cadeaux Star Wars GRATUITS dans Fortnite… sans jouer !</h2>
+          <p>Les fans de l’univers galactique vont kiffer : 2 récompenses gratuites débarquent dans Fortnite, et tu n’as même pas besoin de lancer une partie pour les choper.</p>
+          <a href="article5.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+
+      <!-- Article 4 -->
+      <div class="card">
+        <img src="/images/Gp3Ex_WWUAAaUfs.jpeg" alt="Skin BUGHA" />
+        <div class="card-content">
+          <h2>Un skin de champion... GRATUIT ?! Bugha débarque dans Fortnite</h2>
+          <p>Oui, t’as bien lu ! Le skin Bugha Champion, inspiré du GOAT Fortnite lui-même, est dispo GRATUITEMENT... mais il va falloir transpirer un peu !</p>
+          <a href="article4.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+      <!-- Article 3 -->
+      <div class="card categorie-cadeaux">
+        <img src="/images/fortnite-elite-zadie-outfit-1920x1080-4dd9b7b052f0.jpg" alt="Zadie skin" />
+        <div class="card-img">
+          <h2>Obtiens Zadie Éclaireuse GRATUITEMENT !</h2>
+          <p>Grind 50 niveaux et débloque le skin Zadie et son set complet. Offre limitée !</p>
+          <a href="article3.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="card categorie-cadeaux">
+        <img src="/images/fortnite-first-order-stormtrooper-outfit-1920x1080-5f5992a58a9b.jpg" alt="Stormtrooper skin" />
+        <div class="card-content">
+          <h2>Skin Stormtrooper gratuit grâce à Disney !</h2>
+          <p>Associe ton compte MyDisney à Epic Games pour recevoir ce skin galactique.</p>
+          <a href="article2.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+
+      <!-- Article 1 -->
+      <div class="card categorie-evenement">
+        <img src="/images/fortnite-star-wars-battle-pass-fr-1920x1080-36cf7a05e3db.jpg" alt="Saison 3 Fortnite" />
+        <div class="card-content">
+          <h2>Nouvelle saison Fortnite x Star Wars !</h2>
+          <p>Découvre toutes les nouveautés galactiques et les cadeaux à récupérer.</p>
+          <a href=" article0.html" class="btn">Lire l'article</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DropActu</p>
+  </footer>
+</body>
+</html>
