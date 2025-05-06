@@ -1,0 +1,168 @@
+/* Style général */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header / Navbar */
+header {
+  background: #0074FF;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.logo-img {
+  width: 18%;
+  border-radius: 120px;
+  margin: 0.5rem 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: #ddd;
+  margin: 0 5px;
+  text-decoration: none;
+  font-weight: 750;
+}
+
+nav a:hover {
+  color: white ;
+} 
+
+/* Page principale / Article */
+.main {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Carte pour la page d'accueil */
+.card {
+  background: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(10, 0, 20, 0.35);
+  max-width: 425px;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+.card2 {
+  background:  #3B67B0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(10, 0, 20, 0.35);
+  max-width: 437.5px;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+/* Bouton commun */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.btn2 {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 0.5rem 0.5rem;
+  background: whitesmoke;
+  color: #0D2853;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s step-end;
+}
+
+.btn2:hover {
+  background: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Style spécifique à un article */
+.article {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  padding: 2rem;
+  margin: 1.75rem auto;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.article h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.article .date {
+  display: block;
+  margin-top: 10px;
+  padding: .75rem rem;
+  background: #FF6363;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.article-img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.article h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.article ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article p {
+  margin: 0.7rem 0;
+  line-height: 1.6;
+}
